@@ -24,7 +24,7 @@ namespace launch {
     const double cos_A_0 = std::cos(A_0);
 	const double sin_B_0 = std::sin(B_0);
 	const double cos_B_0 = std::cos(B_0);
-	
+	using Eigen::Vector3d;
     const Vector3d R_0 = {-r_0 * sin_mu_0 * cos_A_0,
                             r_0 * cos_mu_0 + H_0,
                             r_0 * sin_mu_0 * sin_A_0};
@@ -93,7 +93,7 @@ namespace landing {
     const double cos_A_1 = std::cos(A_1);
     const double sin_B_1 = std::sin(B_1);
     const double cos_B_1 = std::cos(B_1);
-
+	using Eigen::Vector3d;
     const Vector3d R_1 = { -r_1 * sin_mu_1 * cos_A_1,
                             r_1 * cos_mu_1 + H_1,
                             r_1 * sin_mu_1 * sin_A_1 };

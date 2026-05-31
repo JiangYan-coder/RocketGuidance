@@ -12,6 +12,7 @@
 #include <algorithm>
 #include <functional>
 #include <time.h>
+#include <fstream>
 
 // 加载第三方库头文件
 #include <Eigen/Dense>

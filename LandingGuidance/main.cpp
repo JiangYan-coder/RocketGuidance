@@ -11,24 +11,23 @@
 
 int main() {
     using Eigen::Matrix3d;
-    //Matrix3d A;
-    //A << 1, 2, 3, 4, 5, 6, 7, 8, 9;
-    //Matrix3d B;
-    //B << 9, 8, 7, 6, 5, 4, 3, 2, 1;
+    //double theta = 0.5;
+    //TransCoordinate trans;
+    //Matrix3d Rx = trans.GetRx(theta);
+    //std::cout << Rx << std::endl;
 
-    //Matrix3d C = A + B;
-    //std::cout << C << std::endl;
+ //   double angle = 30 * D2R;
+ //   TransCoordinate trans;
+	//Matrix3d Rx = trans.GetRx(angle);
+	//std::cout << Rx << std::endl;
 
-    std::cout << PI << std::endl;
+	//Matrix3d Rx{};  // 全零初始化一定要加 {}，否则会得到未定义的结果
+	//std::cout << Rx << std::endl;
 
-    double theta = 0.5;
-    TransCoordinate trans;
-    Matrix3d Rx = trans.GetRx(theta);
-    std::cout << Rx << std::endl;
-
-    std::cout << "A_0 = " << launch::A_0 << "rad" << std::endl;
-	std::cout << "omega_e_vec = [" << launch::omega_e_vec << "] rad/s" << std::endl;
-	std::cout << launch::R_0.transpose() << std::endl;
+	//std::ofstream f("1.txt");	// 创建一个文本文件对象，并打开1.txt文件，如果文件不存在则创建，如果存在则覆盖
+	//char buf[0xFF];
+	//f.write("hello world", 12); //普通写
+	//f.put('c'); //写入一个字符
 
     return 0;
 }

@@ -4,15 +4,19 @@
 
 #include <Eigen/Dense>	// 预编译头包含就可以，但头文件本身最好包含，提高程序可靠性
 
-
-/// <summary>
-/// 坐标系转换类
-/// </summary>
+/**
+* @file transform_coordinate.h
+* @brief 坐标系转换类
+*/
 class TransCoordinate {
+	using Matrix3d = Eigen::Matrix3d;
 	public:
-		using Matrix3d = Eigen::Matrix3d;
 		// 绕x轴旋转欧拉角矩阵
 		Matrix3d GetRx(const double& angle);
+		// 绕y轴旋转欧拉角矩阵
+		Matrix3d GetRy(const double& angle);
+		// 绕z轴旋转欧拉角矩阵
+		Matrix3d GetRz(const double& angle);
 	private:
 };
 

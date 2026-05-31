@@ -66,6 +66,15 @@ namespace rocket
     // 箭体结构
     extern const double mass_dry;
 }
+
+/**
+* @brief 仿真参数定义头文件
+*/
+namespace sim
+{
+	constexpr double time_step = 0.01;   // 仿真时间步长，单位秒 
+
+}
 #endif // !_PARAMETER_H_
 
 

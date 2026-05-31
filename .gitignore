@@ -66,5 +66,41 @@ vcpkg_installed/
 
 # test output & cache
 Testing/
-.cache/
-/.vs/RocektGuidance
+    .cache/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build results
+x64/
+*/x64/
+[Dd]ebug/
+[Rr]elease/
+*.iobj
+*.ipdb
+*.ipch
+*.idb
+*.tlog
+*.lastbuildstate
+*.recipe
+*.sdf
+
+# Code Analysis
+*.nativecodeanalysis.xml
+*.sarif
+
+# VS IDE
+Browse.VC.db
+Browse.VC.db-*
+Browse.VC.opendb
+*.vcxproj.user
+DocumentLayout.json
+DocumentLayout.json-*
+
+# Copilot
+CopilotIndices/

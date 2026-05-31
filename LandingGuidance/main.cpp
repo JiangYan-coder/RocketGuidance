@@ -21,8 +21,8 @@ int main() {
 	//Matrix3d Rx = trans.GetRx(angle);
 	//std::cout << Rx << std::endl;
 
-	//Matrix3d Rx{};  // 全零初始化一定要加 {}，否则会得到未定义的结果
-	//std::cout << Rx << std::endl;
+	Matrix3d Rx{};  // 全零初始化一定要加 {}，否则会得到未定义的结果
+	std::cout << Rx << std::endl;
 
 	//std::ofstream f("1.txt");	// 创建一个文本文件对象，并打开1.txt文件，如果文件不存在则创建，如果存在则覆盖
 	//char buf[0xFF];
@@ -31,3 +31,4 @@ int main() {
 
     return 0;
 }
+
